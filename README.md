@@ -12,9 +12,10 @@ To raise issues or make changes, go to [`https://github.com/soztag/printer`](htt
 
 There are three ways to connect to the printer:
 
-1. `socket:://faui13printer.informatik.uni-erlangen.de` (ethernet only, for cryptology)
-2. `socket:://10.26.63.77` (ethernet only, for SOZTAG)
-3. `smb:://wisoprint2.wiso.uni-erlangen.de` (ethernet + WiFi)
+1. `faui13printer.informatik.uni-erlangen.de` (ethernet only, for cryptology)
+2. `10.26.63.77` (ethernet only, for SOZTAG)
+3. ~~`smb://wisoprint2.wiso.uni-erlangen.de`~~ (**experimental** ethernet + WiFi)
+   Does not currently work, tracked in [#1](https://github.com/soztag/printer/issues/1).
 
 
 ## Setup
@@ -38,7 +39,7 @@ There are three ways to connect to the printer:
 5. Save the job accounting number as a setting preset.
   This is where it gets weird.
     - Open a program with the *old* (< macOS 10.14.3), extensive print dialogue.
-      Microsoft Word is a good bet.
+      Microsoft Word or Google Crome are a good bet.
       *You can't use Apple programs for this step, they all use the new print dialogue*.
     - Bring up the print menu. 
       Choose the newly installed printer in the dropdown.
