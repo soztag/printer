@@ -14,8 +14,7 @@ There are three ways to connect to the printer:
 
 1. `faui13printer.informatik.uni-erlangen.de` (ethernet only, for cryptology)
 2. `10.26.63.77` (ethernet only, for SOZTAG)
-3. ~~`smb://wisoprint2.wiso.uni-erlangen.de`~~ (**experimental** ethernet + WiFi)
-   Does not currently work, tracked in [#1](https://github.com/soztag/printer/issues/1).
+3. `smb://wisoprint2.wiso.uni-erlangen.de/nct-aeg-11219-utax-3005ci` (**experimental** ethernet + WiFi)
 
 
 ## Setup
@@ -27,11 +26,20 @@ There are three ways to connect to the printer:
   Download the most recent driver for your platform.  
   ![Download](https://github.com/soztag/printer/blob/master/download.png?raw=true){ width=50% }
 2. Unzip the downloaded archive and install the driver.
-3. Add the printer.
+3. Add the printer. 
     - Navigate to `Systems Preferences > Printers & Scanners` and click "plus".
-    - Fill in the address field (see above) and choose the UTAX driver.
-      Replace the address in the below screenshot with the one that's right for you.  
-      ![Installation](https://github.com/soztag/printer/blob/master/installation.png?raw=true){ width=50% }
+    - For the **ethernet only** connections:
+        - Choose the `IP` ribbon.
+        - Fill in the address field (see above) and choose the UTAX driver.
+          Replace the address in the below screenshot with the one that's right for you.  
+          ![Installation](https://github.com/soztag/printer/blob/master/installation.png?raw=true){ width=50% }
+    - For connections over **ethernet and WiFi** (via SMB printserver):
+        - Right click on the area next to the search field and choose `Customize Toolbar`.  
+          ![Toolbar 1](https://github.com/soztag/printer/blob/master/toolbar_1.png?raw=true){ width=50% }  
+        - Drag the "Advanced" icon to the main ribbon.  
+          ![Toolbar 2](https://github.com/soztag/printer/blob/master/toolbar_2.png?raw=true){ width=50% }  
+        - Then choose advanced, and fill in the SMB address and choose the UTAX driver.  
+          ![Wisoprint](https://github.com/soztag/printer/blob/master/wisoprint.png?raw=true){ width=50% }  
 4. Change the page description language (PDL).
   Navigate to `Systems Preferences > Select PDL` and choose **PCL** as the PDL.
   **Do not skip this step**, or bad things (printed gibberish) may happen.  
