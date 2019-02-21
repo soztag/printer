@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="setting-up-the-utax-printer-at-nct">Setting up the UTAX printer at NCT</h1>
+<p><strong>This documentation lives on GitHub. To raise issues or make changes, go to <code>https://github.com/soztag/printer</code></strong>.</p>
+<figure>
+<img src="https://imgs.xkcd.com/comics/manuals.png" alt="xkcd 1343: Manuals" /><figcaption>xkcd 1343: <em>Manuals</em></figcaption>
+</figure>
+<h2 id="connecting">Connecting</h2>
+<p>There are three ways to connect to the printer:</p>
+<ol type="1">
+<li><code>socket:://faui13printer.informatik.uni-erlangen.de</code> (ethernet only, for cryptology)</li>
+<li><code>socket:://10.26.63.77</code> (ethernet only, for SOZTAG)</li>
+<li><code>smb:://wisoprint2.wiso.uni-erlangen.de</code> (ethernet + WiFi)</li>
+</ol>
+<h2 id="setup">Setup</h2>
+<ol type="1">
+<li>Go to <code>http://www.utax.de</code> and download the driver for the printer. Navigate to <code>Download-Center &gt; Treiber</code> (<em>yikes</em>, no permalink). The printer make is <strong>UTAX 3005ci</strong>. Choose as in the below screenshot. Download the most recent driver for your platform. <img src="https://github.com/maxheld83/printer/blob/master/download.png?raw=true" alt="Download" /></li>
+<li>Unzip the downloaded archive and install the driver.</li>
+<li>Add the printer.</li>
+</ol>
+<ul>
+<li>Navigate to <code>Systems Preferences &gt; Printers &amp; Scanners</code> and click “plus”.</li>
+<li>Fill in the address field (see above) and choose the UTAX driver. Replace the address in the below screenshot with the one that’s right for you. <img src="https://github.com/maxheld83/printer/blob/master/installation.png?raw=true" alt="Installation" /></li>
+</ul>
+<ol start="4" type="1">
+<li>Change the page description language (PDL). Navigate to <code>Systems Preferences &gt; Select PDL</code> and choose <strong>PCL</strong> as the PDL. <strong>Do not skip this step</strong>, or bad things (printed gibberish) may happen. <img src="https://github.com/maxheld83/printer/blob/master/pdl.png?raw=true" alt="Installation" /></li>
+<li>Save the job accounting number as a setting preset. This is where it gets weird.</li>
+</ol>
+<ul>
+<li>Open a program with the <em>old</em> (&lt; macOS 10.14.3), extensive print dialogue. Microsoft Word is a good bet. <em>You can’t use Apple programs for this step, they all use the new print dialogue</em>.</li>
+<li>Bring up the print menu. Choose the newly installed printer in the dropdown.</li>
+<li><em>In</em> the print menu, choose the <code>Print Panel</code> in the dropdown. Click <code>Settings</code>. This will bring up TA_UTAX Print Panel application.</li>
+<li>Inside that application, navigate to <code>Job &gt; Job accounting</code> and fill in the <strong>job accounting number</strong> (~ Kostenstelle) for your organisation. <img src="https://github.com/maxheld83/printer/blob/master/job_id.png?raw=true" alt="Job ID" /></li>
+<li>While you’re at it, you should also choose other sensible defaults to save paper and money (duplex printing, no color). <img src="https://github.com/maxheld83/printer/blob/master/saving.png?raw=true" alt="Saving" /> Click ok.</li>
+<li>Choose <code>Save Current Setting as Preset...</code> from the <code>Presets</code> dropdown in the print menu. <img src="https://github.com/maxheld83/printer/blob/master/set_presets.png?raw=true" alt="Set Presets" /></li>
+<li>Name the presets, and *apply them to <code>Only this printer</code>. <img src="https://github.com/maxheld83/printer/blob/master/save_presets.png?raw=true" alt="Save Presets" /></li>
+</ul>
+<ol start="6" type="1">
+<li>You should now be able to print from <em>any</em> application. Make sure to always choose the correct printer and presets. <img src="https://github.com/maxheld83/printer/blob/master/success.png?raw=true" alt="Success!" /></li>
+</ol>
+<h2 id="reset">Reset</h2>
+<p>If you already <em>have</em> the printer installed, but it’s not working right, consider deleting the printer and adding it again.</p>
+<p>To do so on <strong>macOS</strong>:</p>
+<ol type="1">
+<li>Navigate to <code>Systems Preferences &gt; Printers &amp; Scanners</code>.</li>
+<li>Choose the printer to be deleted.</li>
+<li>Click delete.</li>
+</ol>
+<figure>
+<img src="https://github.com/maxheld83/printer/blob/master/deletion.png?raw=true" alt="Deleting a printer" /><figcaption>Deleting a printer</figcaption>
+</figure>
+<p>Then start the setup from scratch.</p>
+</body>
+</html>
