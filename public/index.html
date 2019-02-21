@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="setting-up-the-utax-printer-at-nct">Setting up the UTAX printer at NCT</h1>
+<p><a href="https://github.com/soztag/printer/actions"><img src="https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/badge/soztag/printer" alt="Actions Status" /></a></p>
+<p><strong>This documentation lives on GitHub. To raise issues or make changes, go to <a href="https://github.com/soztag/printer"><code>https://github.com/soztag/printer</code></a></strong>.</p>
+<figure>
+<img src="https://imgs.xkcd.com/comics/manuals.png" alt="xkcd 1343: Manuals" /><figcaption>xkcd 1343: <em>Manuals</em></figcaption>
+</figure>
+<h2 id="connecting">Connecting</h2>
+<p>There are three ways to connect to the printer:</p>
+<ol type="1">
+<li><code>socket:://faui13printer.informatik.uni-erlangen.de</code> (ethernet only, for cryptology)</li>
+<li><code>socket:://10.26.63.77</code> (ethernet only, for SOZTAG)</li>
+<li><code>smb:://wisoprint2.wiso.uni-erlangen.de</code> (ethernet + WiFi)</li>
+</ol>
+<h2 id="setup">Setup</h2>
+<ol type="1">
+<li>Go to <a href="http://www.utax.de"><code>http://www.utax.de</code></a> and download the driver for the printer. Navigate to <code>Download-Center &gt; Treiber</code> (<em>yikes</em>, no permalink). The printer make is <strong>UTAX 3005ci</strong>. Choose as in the below screenshot. Download the most recent driver for your platform.<br />
+<img src="https://github.com/soztag/printer/blob/master/download.png?raw=true" alt="Download" style="width:50.0%" /></li>
+<li>Unzip the downloaded archive and install the driver.</li>
+<li>Add the printer.
+<ul>
+<li>Navigate to <code>Systems Preferences &gt; Printers &amp; Scanners</code> and click “plus”.</li>
+<li>Fill in the address field (see above) and choose the UTAX driver. Replace the address in the below screenshot with the one that’s right for you.<br />
+<img src="https://github.com/soztag/printer/blob/master/installation.png?raw=true" alt="Installation" style="width:50.0%" /></li>
+</ul></li>
+<li>Change the page description language (PDL). Navigate to <code>Systems Preferences &gt; Select PDL</code> and choose <strong>PCL</strong> as the PDL. <strong>Do not skip this step</strong>, or bad things (printed gibberish) may happen.<br />
+<img src="https://github.com/soztag/printer/blob/master/pdl.png?raw=true" alt="Installation" style="width:50.0%" /></li>
+<li>Save the job accounting number as a setting preset. This is where it gets weird.
+<ul>
+<li>Open a program with the <em>old</em> (&lt; macOS 10.14.3), extensive print dialogue. Microsoft Word is a good bet. <em>You can’t use Apple programs for this step, they all use the new print dialogue</em>.</li>
+<li>Bring up the print menu. Choose the newly installed printer in the dropdown.</li>
+<li><em>In</em> the print menu, choose the <code>Print Panel</code> in the dropdown. Click <code>Settings</code>. This will bring up TA_UTAX Print Panel application.</li>
+<li>Inside that application, navigate to <code>Job &gt; Job accounting</code> and fill in the <strong>job accounting number</strong> (~ Kostenstelle) for your organisation.<br />
+<img src="https://github.com/soztag/printer/blob/master/job_id.png?raw=true" alt="Job ID" style="width:50.0%" /></li>
+<li>While you’re at it, you should also choose other sensible defaults to save paper and money (duplex printing, no color).<br />
+<img src="https://github.com/soztag/printer/blob/master/saving.png?raw=true" alt="Saving" style="width:50.0%" /><br />
+Click ok.</li>
+<li>Choose <code>Save Current Setting as Preset...</code> from the <code>Presets</code> dropdown in the print menu. <img src="https://github.com/soztag/printer/blob/master/set_presets.png?raw=true" alt="Set Presets" style="width:50.0%" /></li>
+<li>Name the presets, and <em>apply them to <code>Only this printer</code>.</em><br />
+<img src="https://github.com/soztag/printer/blob/master/save_presets.png?raw=true" alt="Save Presets" style="width:50.0%" /></li>
+</ul></li>
+<li>You should now be able to print from <em>any</em> application. Make sure to always choose the correct printer and presets.<br />
+<img src="https://github.com/soztag/printer/blob/master/success.png?raw=true" alt="Success!" style="width:50.0%" /></li>
+</ol>
+<h2 id="reset">Reset</h2>
+<p>If you already <em>have</em> the printer installed, but it’s not working right, consider deleting the printer and adding it again.</p>
+<p>To do so on <strong>macOS</strong>:</p>
+<ol type="1">
+<li>Navigate to <code>Systems Preferences &gt; Printers &amp; Scanners</code>.</li>
+<li>Choose the printer to be deleted.</li>
+<li>Click delete.</li>
+</ol>
+<figure>
+<img src="https://github.com/soztag/printer/blob/master/deletion.png?raw=true" alt="Deleting a printer" style="width:50.0%" /><figcaption>Deleting a printer</figcaption>
+</figure>
+<p>Then start the setup from scratch.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li>Consider reinstalling as per the above instructions.</li>
+<li>Raise an issue at <code>https://github.com/soztag/printer</code>.</li>
+<li>Contact the service provider, <a href="www.mog-online.de">MOG IT MBG</a>. The service ID for the printer is <strong>4379</strong>.</li>
+</ul>
+</body>
+</html>
