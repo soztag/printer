@@ -22,17 +22,17 @@ There are three ways to connect to the printer:
   The printer make is **UTAX 3005ci**.
   Choose as in the below screenshot.
   Download the most recent driver for your platform.
-  ![Download](https://github.com/maxheld83/printer/blob/master/download.png?raw=true)
+  ![Download](https://github.com/soztag/printer/blob/master/download.png?raw=true)
 2. Unzip the downloaded archive and install the driver.
 3. Add the printer.
   - Navigate to `Systems Preferences > Printers & Scanners` and click "plus".
   - Fill in the address field (see above) and choose the UTAX driver.
     Replace the address in the below screenshot with the one that's right for you.
-    ![Installation](https://github.com/maxheld83/printer/blob/master/installation.png?raw=true)
+    ![Installation](https://github.com/soztag/printer/blob/master/installation.png?raw=true)
 4. Change the page description language (PDL).
   Navigate to `Systems Preferences > Select PDL` and choose **PCL** as the PDL.
   **Do not skip this step**, or bad things (printed gibberish) may happen.
-  ![Installation](https://github.com/maxheld83/printer/blob/master/pdl.png?raw=true)
+  ![Installation](https://github.com/soztag/printer/blob/master/pdl.png?raw=true)
 5. Save the job accounting number as a setting preset.
   This is where it gets weird.
   - Open a program with the *old* (< macOS 10.14.3), extensive print dialogue.
@@ -44,17 +44,17 @@ There are three ways to connect to the printer:
     Click `Settings`.
     This will bring up TA_UTAX Print Panel application.
   - Inside that application, navigate to `Job > Job accounting` and fill in the **job accounting number** (~ Kostenstelle) for your organisation.
-    ![Job ID](https://github.com/maxheld83/printer/blob/master/job_id.png?raw=true)
+    ![Job ID](https://github.com/soztag/printer/blob/master/job_id.png?raw=true)
   - While you're at it, you should also choose other sensible defaults to save paper and money (duplex printing, no color).
-    ![Saving](https://github.com/maxheld83/printer/blob/master/saving.png?raw=true)
+    ![Saving](https://github.com/soztag/printer/blob/master/saving.png?raw=true)
     Click ok.
   - Choose `Save Current Setting as Preset...` from the `Presets` dropdown in the print menu.
-    ![Set Presets](https://github.com/maxheld83/printer/blob/master/set_presets.png?raw=true)
+    ![Set Presets](https://github.com/soztag/printer/blob/master/set_presets.png?raw=true)
   - Name the presets, and *apply them to `Only this printer`.
-    ![Save Presets](https://github.com/maxheld83/printer/blob/master/save_presets.png?raw=true)
+    ![Save Presets](https://github.com/soztag/printer/blob/master/save_presets.png?raw=true)
 6. You should now be able to print from *any* application.
   Make sure to always choose the correct printer and presets.
-  ![Success!](https://github.com/maxheld83/printer/blob/master/success.png?raw=true)
+  ![Success!](https://github.com/soztag/printer/blob/master/success.png?raw=true)
 
 
 ## Reset
@@ -67,6 +67,6 @@ To do so on **macOS**:
 2. Choose the printer to be deleted.
 3. Click delete.
 
-![Deleting a printer](https://github.com/maxheld83/printer/blob/master/deletion.png?raw=true)
+![Deleting a printer](https://github.com/soztag/printer/blob/master/deletion.png?raw=true)
 
 Then start the setup from scratch.
