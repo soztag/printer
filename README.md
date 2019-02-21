@@ -3,7 +3,7 @@
 [![Actions Status](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/badge/soztag/printer)](https://github.com/soztag/printer/actions)
 
 **This documentation lives on GitHub.
-To raise issues or make changes, go to `https://github.com/soztag/printer`**.
+To raise issues or make changes, go to [`https://github.com/soztag/printer`](https://github.com/soztag/printer)**.
 
 ![xkcd 1343: *Manuals*](https://imgs.xkcd.com/comics/manuals.png)
 
@@ -19,7 +19,7 @@ There are three ways to connect to the printer:
 
 ## Setup
 
-1. Go to `http://www.utax.de` and download the driver for the printer.
+1. Go to [`http://www.utax.de`](http://www.utax.de) and download the driver for the printer.
   Navigate to `Download-Center > Treiber` (*yikes*, no permalink).
   The printer make is **UTAX 3005ci**.
   Choose as in the below screenshot.
