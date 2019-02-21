@@ -72,3 +72,11 @@ To do so on **macOS**:
 ![Deleting a printer](https://github.com/soztag/printer/blob/master/deletion.png?raw=true){ width=50% }
 
 Then start the setup from scratch.
+
+
+## Troubleshooting
+
+- Consider reinstalling as per the above instructions.
+- Raise an issue at `https://github.com/soztag/printer`.
+- Contact the service provider, [MOG IT MBG](www.mog-online.de).
+  The service ID for the printer is **4379**.
