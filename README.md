@@ -1,5 +1,7 @@
 # Setting up the UTAX printer at NCT
 
+[![Actions Status](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/badge/soztag/printer)](https://github.com/soztag/printer/actions)
+
 **This documentation lives on GitHub.
 To raise issues or make changes, go to `https://github.com/soztag/printer`**.
 
