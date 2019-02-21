@@ -50,7 +50,7 @@ There are three ways to connect to the printer:
     - While you're at it, you should also choose other sensible defaults to save paper and money (duplex printing, no color).  
       ![Saving](https://github.com/soztag/printer/blob/master/saving.png?raw=true){ width=50% }  
       Click ok.
-    - Choose `Save Current Setting as Preset...` from the `Presets` dropdown in the print menu.
+    - Choose `Save Current Setting as Preset...` from the `Presets` dropdown in the print menu.  
       ![Set Presets](https://github.com/soztag/printer/blob/master/set_presets.png?raw=true){ width=50% }
     - Name the presets, and *apply them to `Only this printer`.*  
       ![Save Presets](https://github.com/soztag/printer/blob/master/save_presets.png?raw=true){ width=50% }
