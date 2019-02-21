@@ -4,7 +4,7 @@ workflow "Publish" {
 }
 
 action "Convert" {
-  uses = "maxheld83/pandoc@master"
+  uses = "maxheld83/pandoc@v0.1.0"
   env = {
     OUT_DIR = "public"
   }
