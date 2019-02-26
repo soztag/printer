@@ -12,9 +12,9 @@ To raise issues or make changes, go to [`https://github.com/soztag/printer`](htt
 
 There are three ways to connect to the printer:
 
-1. `faui13printer.informatik.uni-erlangen.de` (ethernet only, for cryptology)
-2. `10.26.63.77` (ethernet only, for SOZTAG)
-3. `smb://wisoprint2.wiso.uni-erlangen.de/nct-aeg-11219-utax-3005ci` (**experimental** ethernet + WiFi)
+1. `smb://wisoprint2.wiso.uni-erlangen.de/nct-aeg-11219-utax-3005ci` (**recommended** ethernet + WiFi)
+2. `faui13printer.informatik.uni-erlangen.de` (ethernet only, for cryptology)
+3. `10.26.63.77` (ethernet only, for SOZTAG)
 
 
 ## Setup
