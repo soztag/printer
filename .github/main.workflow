@@ -11,6 +11,7 @@ action "Convert" {
   args = [
     "--standalone",
     "--output=public/index.html",
+    "--css=css/bootstrap.min.css",
     "README.md"
   ]
 }
