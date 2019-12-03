@@ -1,6 +1,8 @@
 # Setting up the UTAX printer at NCT
 
-[![Actions Status](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/badge/soztag/printer)](https://github.com/soztag/printer/actions)
+<!-- badges: start -->
+[![Actions Status](https://github.com/soztag/printer/workflows/Publishing/badge.svg)](https://github.com/soztag/printer/actions)
+<!-- badges: end -->
 
 **This documentation lives on GitHub.
 To raise issues or make changes, go to [`https://github.com/soztag/printer`](https://github.com/soztag/printer)**.
