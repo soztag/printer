@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v1
-      - uses: maxheld83/pandoc@v2
+      - uses: docker://pandoc/core:2.9
         with:
           args: "--standalone --output=public/index.html --css=css/bootstrap.min.css README.md"
       - name: Deploy Website
